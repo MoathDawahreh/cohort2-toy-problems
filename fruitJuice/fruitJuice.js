@@ -21,7 +21,7 @@ Complete the functions in order to provide this functionality.
 */
 
 
-
+// i just did not notice that you want the soulution on pseudoclassical way so  i did refactor my cod fast  i know how to solve it using pseudoclassical
 function Jar() {
   var jar={}
   jar.concentrations = 0
