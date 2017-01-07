@@ -54,7 +54,18 @@ nextBigger(9)==-1
 nextBigger(111)==-1
 nextBigger(531)==-1
 */
-
 function nextBigger(num){
+	//convert the number to array -index for each digit-
+  var num = num.toString().split('')
+  for (var i = 0; i < num.length; i++) {
+    if (num[0] < num[i+1]) {
+      var temp = num[i]
+      num[i] = num[i+1]
+      num[i+1] = temp
+    }else{
+      nextBigger(num.slice(2))
+    }
+  }
+  return Number(num.join(''))
 
 }
