@@ -69,3 +69,10 @@ function nextBigger(num){
   return Number(num.join(''))
 
 }
+
+// in case If no bigger number can be composed using those digits, return -1:
+// i thought about creating max function and check if first index in the array = max(arr) then return -1 !! 
+ 
+// function max (arr){
+// 	return Math.min.apply(null, arr)
+// }
