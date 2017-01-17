@@ -16,9 +16,51 @@
 // list.removeHead(); //yields '4'
 // list.tail.value;   //yields '5';
 
+// I know how linked list work but i got lost in how to cod  some parts .!  
 
 var LinkedList = function(){
-  //fill me in!
-};
+	this.list={}
+	this.list.head = null 
+	this.list.tail = null
+	// this.size = 0
 
-//write methods here!
+};
+LinkedList.prototype.addToTail = function function_name(value) {
+	var node =Node(value)
+	if (!this.head) {
+		this.head = node
+	}else{
+		// this.list.tail=node
+		this.list.tail.next = node
+		// this.list.tail = node
+		// this.size++
+	 }
+
+}
+LinkedList.prototype.removeHead = function function_name() {
+	// if (this.head) {
+
+	// }
+
+}
+LinkedList.prototype.contains = function function_name(target) {
+	// var c = list.head
+	// for(var key in this.list){
+	// 	if (target === list.head) {
+	// 		return true
+	// 	}
+
+	// }
+
+
+}
+
+
+
+var Node = function(value) {
+  var node = {};
+  node.value = value;
+  node.next = null;
+
+  return node;
+};
