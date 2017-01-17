@@ -5,5 +5,20 @@ Hint the answer is 1366.
 */
 
 var powerOfTwo = function(num){
+	var num = Math.pow(2,num)
+    var num = num.toString().split('')
+    // var sum = 0 ;
+    var num = num.map(Number);
+    var sum = num.reduce(function(a, b) {
+  		return a + b;
+		}, 0);
+
+
+    // for (var i = 0; i < num.length; i++) {
+    // 	sum
+    // }
+    return sum
+
+
 
 }
