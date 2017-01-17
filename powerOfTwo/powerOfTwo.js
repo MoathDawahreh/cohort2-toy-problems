@@ -5,6 +5,19 @@ Hint the answer is 1366.
 */
 
 var powerOfTwo = function(num){
+	//to avoid e+ for big numbers 
+	// break the big numbers to small parts -for example 60-
+	// and maybe put the work below in seprate function and invoke it 
+	//  -am just saying :p -
+	// if (num > 60) {
+	// 	n = num/60
+	// 	for (var i = 0; i < n+1; i++) {
+	// 		Things[i]
+	// 	}
+
+	// }
+	//parseInt(sum.toString().split('e')[1]);
+
 	var num = Math.pow(2,num)
     var num = num.toString().split('')
     // var sum = 0 ;
@@ -15,7 +28,7 @@ var powerOfTwo = function(num){
 
 
     // for (var i = 0; i < num.length; i++) {
-    // 	sum
+    // 	
     // }
     return sum
 
