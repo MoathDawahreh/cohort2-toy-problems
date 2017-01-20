@@ -14,6 +14,8 @@ Example:
 var board = [[0,0,1],
              [0,1,2],
              [2,1,0]];
+
+
 ticTacToe(board);//should return -1
 var solvedBoard = [[0,1,1],
                    [0,1,2],
@@ -22,5 +24,30 @@ ticTacToe(solvedBoard);//should return 1
 */
 
 function ticTacToe(board){
+	var b = board
+	for (var i = 0; i < board.length; i++) {
+		// I can give the soultion  using this way but I think it should be most efficient way to do this
+		if (board[i][0]===1 && board[i][1]===1 &&board[i][2]===1 ) {
+			return 1
+		}else if (board[i][0]===2 && board[i][1]===2 &&board[i][2]===2 ) {
+			return 2
+		}else if (board[0][0]===2 && board[i][0]===2 &&board[i][0]===2 ) {}
+		//....
+		//..
+		//.
 	
+
+	// for (var j = 0; j < b.length; j++) {
+	// 	board[j]
+	//console.log(board[i][j])
+
+	// }
+
+		
+	}
+			
 };
+
+
+   
+ 
