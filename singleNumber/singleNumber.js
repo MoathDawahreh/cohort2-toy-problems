@@ -45,7 +45,7 @@ excluding [11,22,33,44,55,66,77,88,99] because they don't have unique digits)
 
 countAllNumbers(2); //should return 91 because there are 91 numbers that have unique digits
 */
-
+//not yet
 function countAllNumbers(n){
 	var x = Math.pow(10,n);
 	//create array contain all numbers from 0 to n
