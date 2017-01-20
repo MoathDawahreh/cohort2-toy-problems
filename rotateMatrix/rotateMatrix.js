@@ -38,6 +38,24 @@
  */
 
 var rotateMatrix =function (matrix) {
+	// var rotatematrix = []
+	for (var i = 0; i < matrix.length; i++) {
+		for (var j = 0; j < matrix.length; j++) {
+
+			var temp = matrix[i][j];
+	        matrix[i][j] = matrix[matrix.length-1-j][i];
+	        // console.log([i][j])
+	        matrix[matrix.length-1-j][i] = matrix[matrix.length-1-i][matrix.length-1-j];
+	        // matrix[matrix.length-1-i][matrix.length-1-j] = matrix[j][matrix.length-1-i];
+	        	        // console.log([matrix.length-1-j][j])
+
+	        matrix[j][matrix.length-1-i] = temp;
+
+		}
+	}
+	return matrix
 	
 }
+
+
 ///////////////////
