@@ -47,5 +47,23 @@ countAllNumbers(2); //should return 91 because there are 91 numbers that have un
 */
 
 function countAllNumbers(n){
+	var x = Math.pow(10,n);
+	//create array contain all numbers from 0 to n
+	var arr = Array.apply(null, {length: x}).map(Number.call, Number)
+	var unique=[]
+	for (var i = 0; i < arr.length; i++) {
+		//in case if number contain more than one digit .. check if the two digits not equal and push the unique numbers
+		if (arr[i] >= 10) {
+			var num = arr[i].toString();
+			num = num.split('')
+			if (num[0]!==num[1]) {
+				unique.push(arr[i])
+			}
+		}
+		if (arr[i]<10) {
+			unique.push(arr[i])
+		}
+	}
+	return unique.length
 
 };
