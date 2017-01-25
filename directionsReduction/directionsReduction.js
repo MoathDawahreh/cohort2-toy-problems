@@ -28,7 +28,42 @@ dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH"]) => [] //don't nee
 */
 
 var dirReduc = function(directions){
-	
-	return directions;
-};
+	var Directions = []
+	var north =0,south=0,east=0,west = 0;
+	for (var i = directions.length - 1; i >= 0; i--) {
 
+		if (directions[i]==='NORTH') {
+			north++
+		};
+		if (directions[i]==='SOUTH') {
+			south++
+		};
+		if (directions[i]==='WEST') {
+			west++
+		};
+		if (directions[i]==='EAST') {
+			east++
+		};
+		// for (var j = directions.length - 1; j >= 0; j--) {
+	 //   		// if(i != j && a[i] == a[j]) {
+  //  			// }
+		// };
+
+		// directions.slice(1).indexOf(directions[i])!==-1 
+
+		};	
+		if (north > south) {
+			Directions.push("NORTH")
+		}
+		if (south > north) {
+			Directions.push("SOUTH")
+		};
+		if (east > west) {
+			Directions.push("EAST")
+		}
+		if (west > east) {
+			Directions.push("WEST")
+		};
+
+	return Directions;
+};
