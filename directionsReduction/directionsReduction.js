@@ -52,18 +52,18 @@ var dirReduc = function(directions){
 		// directions.slice(1).indexOf(directions[i])!==-1 
 
 		};	
-		if (north > south) {
-			Directions.push("NORTH")
-		}
-		if (south > north) {
-			Directions.push("SOUTH")
-		};
-		if (east > west) {
-			Directions.push("EAST")
-		}
-		if (west > east) {
-			Directions.push("WEST")
-		};
+	if (north > south) {
+		Directions.push("NORTH")
+	}
+	if (south > north) {
+		Directions.push("SOUTH")
+	};
+	if (east > west) {
+		Directions.push("EAST")
+	}
+	if (west > east) {
+		Directions.push("WEST")
+	};
 
 	return Directions;
 };
