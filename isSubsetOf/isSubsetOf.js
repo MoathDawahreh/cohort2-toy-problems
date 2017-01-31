@@ -23,5 +23,21 @@
 */
 
 Array.prototype.isSubsetOf = function (arr) {
+	var flag = false
+	// var arrlength = arr.length
+	// var count = 0
+	// if (Array.isArray(arr)) {}
+	for (i = 0; i < this.length; i++) {
+		// arr.forEach(function(elements){
+		// 	if (arr.indexOf(this[i])>-1) {
+		// 		count++
+		// }
+		// })
+		if (arr.indexOf(this[i])>-1) {
+			flag =true
+		}
+
+    }
+    return flag
 
 }
