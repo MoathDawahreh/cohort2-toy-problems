@@ -17,6 +17,7 @@
  */
 
 var translateRomanNumeral = function(romanNumeral){
+	var result = 0 ;
 	var DIGIT_VALUES = {
 	  I: 1,
 	  V: 5,
@@ -26,4 +27,21 @@ var translateRomanNumeral = function(romanNumeral){
 	  D: 500,
 	  M: 1000
 	};
+	// var romanNumeral = romanNumeral.split('')
+	// for(var key in DIGIT_VALUES){
+
+	// }
+
+	for (var i = 0; i < romanNumeral.length; i++) {
+		var temp =romanNumeral[i]
+		var next = romanNumeral[i+1]
+		// if (DIGIT_VALUES[temp]=== undefined || DIGIT_VALUES[nex]=== undefined ) {}
+		if (DIGIT_VALUES[temp] < DIGIT_VALUES[next]) {
+			// console.log()
+			result = result - DIGIT_VALUES[temp]
+		}else{
+			result =result + DIGIT_VALUES[next]
+		}
+	}
+	return result
 }
