@@ -23,6 +23,7 @@
 */
 
 Array.prototype.isSubsetOf = function (arr) {
+<<<<<<< HEAD
 	var flag = false
 	// var arrlength = arr.length
 	// var count = 0
@@ -39,5 +40,7 @@ Array.prototype.isSubsetOf = function (arr) {
 
     }
     return flag
+=======
+>>>>>>> ec1197ded368e7aad2cc2c29d5059a3905f42645
 
 }
