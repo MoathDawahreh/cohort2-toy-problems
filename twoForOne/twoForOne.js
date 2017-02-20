@@ -52,6 +52,21 @@ pyramid(1666); // should === 16
 */
 
 function pyramid(cans){
+var sq;
+	var count = 0
+	var total = 0
+	var start = 1
+	for (var i = start;;i++){
+		count++
+		sq=i*i
+		total=total+sq
+		if (total===cans) {
+			return count
+		}
+	}
+	for (var i = cans; i > 1; i--) {
+		
+	}
 	
 };
 
